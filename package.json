@@ -1,6 +1,6 @@
 {
   "name": "ta-csa",
-  "version": "0.3.4",
+  "version": "1.0.1",
   "description": "Text-Alive Chord String Analysis",
   "files": [
     "dist"
@@ -47,6 +47,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ysakaipgh/ta-csa.git"
-  },
-  "private": true
+  }
 }
