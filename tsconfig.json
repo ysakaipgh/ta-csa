@@ -1,0 +1,32 @@
+{
+  "compilerOptions" : {
+    // デフォルトの設定
+    "target" : "ES5",
+    "module": "ES2015",                        // これにしないとダメらしい
+    "strict" : true,                           // デフォルトのまま
+    "esModuleInterop" : true,                  // デフォルトのまま
+    "skipLibCheck" : true,                     // 型エラーのチェック
+    "forceConsistentCasingInFileNames" : true, // デフォルトのまま
+
+    // ビルド関連で追加する設定
+    "outDir" : "./dist", // buildで出力するディレクトリを定義
+    "declaration" : true, // ビルド時にxxx.d.tsとして型定義ファイルを出力させる
+    "sourceMap" : true,   // tsとjsの対応関係を作る
+
+    // さらに追加
+    "allowJs": true,
+    "checkJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "noUncheckedIndexedAccess": true,
+  },
+  "include": [
+    "**/*.ts",
+  ],
+  "exclude" : [     // ビルドから除外するファイルを列挙する
+    "node_modules", // ノードモジュールはビルドから除外
+    "**/*.spec.ts"  // テストファイルはビルドから除外
+  ]
+}

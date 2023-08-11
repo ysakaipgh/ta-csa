@@ -1,0 +1,52 @@
+{
+  "name": "ta-csa",
+  "version": "0.3.4",
+  "description": "Text-Alive Chord String Analysis",
+  "files": [
+    "dist"
+  ],
+  "main": "index.d.ts",
+  "scripts": {
+    "build": "del-cli dist & webpack",
+    "prepare": "npm run build",
+    "lint": "npx eslint --ext ts src",
+    "test": "jest",
+    "clean": "del-cli dist"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.1",
+    "@types/jest": "^29.5.3",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-deprecation": "^1.5.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "eslint-webpack-plugin": "^4.0.1",
+    "jest": "^29.6.2",
+    "ts-jest": "^29.1.1",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "keywords": [
+    "Text Alive",
+    "textalive"
+  ],
+  "homepage": "https://github.com/ysakaipgh/ta-csa#readme",
+  "bugs": {
+    "url": "https://github.com/ysakaipgh/ta-csa/issues"
+  },
+  "license": "MIT",
+  "author": "Yasuo Sakai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysakaipgh/ta-csa.git"
+  },
+  "private": true
+}
