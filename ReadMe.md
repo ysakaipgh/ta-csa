@@ -45,7 +45,7 @@ npm install ta-csa
 - まずはインポートを行います。
 
 ```typescript
-import ChordController from "ts-csa/dist";
+import ChordController from "ts-csa";
 ```
 
 - クラスを初期化します。

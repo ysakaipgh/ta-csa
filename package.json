@@ -1,11 +1,16 @@
 {
   "name": "ta-csa",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Text-Alive Chord String Analysis",
+  "main": "./dist/index.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "main": "index.d.ts",
   "scripts": {
     "build": "del-cli dist & webpack",
     "prepare": "npm run build",
@@ -36,14 +41,16 @@
   },
   "keywords": [
     "Text Alive",
-    "textalive"
+    "textalive",
+    "chord analysis"
   ],
   "homepage": "https://github.com/ysakaipgh/ta-csa#readme",
   "bugs": {
-    "url": "https://github.com/ysakaipgh/ta-csa/issues"
+    "url": "https://github.com/ysakaipgh/ta-csa/issues",
+    "email" : "ysakaipgh@personal-dashboard.net"
   },
   "license": "MIT",
-  "author": "Yasuo Sakai",
+  "author": "Yasuo Sakai <ysakaipgh@personal-dashboard.net> (https://www.personal-dashboard.net/)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ysakaipgh/ta-csa.git"
